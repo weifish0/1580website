@@ -151,3 +151,7 @@ header{
     gap: 5rem;
     height: 100%;
 }
+
+.header__left p{
+    margin: 1rem 0 2.4rem;
+}
