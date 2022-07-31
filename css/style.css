@@ -69,6 +69,12 @@ h3{
 h4{
     font-size: 1.3rem;
 }
+h5{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.1rem;
+}
 a{
     color: var(--color-white)
 }
@@ -108,6 +114,11 @@ nav{
     position: fixed;
     top: 0;
     z-index: 11;
+}
+
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .nav__container{
@@ -158,6 +169,7 @@ header{
 /* ====================== CATEGORIES ==================== */
 .categories{
     background: var(--color-bg1);
+    height: 29rem;
 }
 
 .categories h1{
@@ -195,7 +207,24 @@ header{
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3); 
     z-index: 1;
 }
-
+.category:nth-child(1) .category__icon{
+    background: var(--color-success);
+}
+.category:nth-child(2) .category__icon{
+    background: var(--color-warning);
+}
+.category:nth-child(3) .category__icon{
+    background: #2a75ca33;
+}
+.category:nth-child(4) .category__icon{
+    background: rgba(190, 80, 120);
+}
+.category:nth-child(5) .category__icon{
+    background: rgba(#a722bc);
+}
+.category:nth-child(6) .category__icon{
+    background: var(--color-danger);
+}
 .category__icon{
     background: var(--color-primary);
     padding: 0.7rem;
@@ -206,3 +235,36 @@ header{
     margin: 2rem 0 1rem;
 }
 
+.category p{
+    font-size: 1rem;
+}
+/* ====================== our stories ==================== */
+.stories{
+    margin: 10rem;
+}
+.stories__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.story{
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.story:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.story__info {
+    padding: 2rem;
+}
+
+.story__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
