@@ -1,0 +1,15 @@
+.about__first {
+    margin-top: 3rem;
+}
+
+.first-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.first-right > p {
+    margin: 1.6rem 0 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
