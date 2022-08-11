@@ -37,10 +37,10 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['m1', 'm2', 'm3'];
+const songs = ['夜空中最亮的星 (coverby 1580)', '摯友 - A-Lin (Cover by 高愷佑 )'];
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
@@ -49,7 +49,7 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
-  cover.src = `images/${song}.jpg`;
+  cover.src = `images/music_cover/${song}.jpg`;
 }
 
 // Play song
